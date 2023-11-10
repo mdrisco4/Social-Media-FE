@@ -1,7 +1,9 @@
 import React from "react";
-import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core'
+import { Container, AppBar, Typography, Grow, Grid, styled } from '@material-ui/core'
 
 import memories from './Images/memories.png'
+
+
 
 const App = () => {
     return (
@@ -12,9 +14,8 @@ const App = () => {
         //     </AppBar>
         // </Container>
         <div>
+            <h2>memories</h2>
             <img src={memories} alt="memories" height="60"/>
-            <Grow></Grow>
-            Hello
         </div>
     )
 }

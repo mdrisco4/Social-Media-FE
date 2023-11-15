@@ -1,11 +1,16 @@
 import React from "react";
 import { Container, AppBar, Typography, Grow, Grid, styled } from '@material-ui/core'
 
+import Posts from "./Components/Posts/Posts";
+import Form from "./Components/Form/Form";
 import memories from './Images/memories.png'
+import useStyles from './styles';
 
 
 
 const App = () => {
+    // const classes = useStyles();
+
     return (
         // <Container maxWidth="lg">
         //     <AppBar position="static" color="inherit">

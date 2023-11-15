@@ -13,9 +13,11 @@ const App = () => {
         //         <img src={memories} alt="memories" height="60"/>
         //     </AppBar>
         // </Container>
-        <div>
-            <h2>memories</h2>
-            <img src={memories} alt="memories" height="60"/>
+        <div maxWidth="lg">
+            <div position="static" color="inherit">
+                <h2 align="center">memories</h2>
+                <img src={memories} alt="memories" height="60"/>
+            </div>
         </div>
     )
 }

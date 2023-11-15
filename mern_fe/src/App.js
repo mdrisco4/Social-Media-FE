@@ -34,7 +34,8 @@ const App = () => {
         <div maxWidth="lg">
             <div position="static" color="inherit">
                 <h2 align="center">memories</h2>
-                <img className={classes.image} src={memories} alt="memories" height="60"/>
+                <img src={memories} alt="memories" height="60"/>
+                {/* className={classes.image} */}
             </div>
             <div>
                 <div>

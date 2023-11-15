@@ -13,9 +13,9 @@ const App = () => {
 
     return (
         // <Container maxWidth="lg">
-        //     <AppBar position="static" color="inherit">
-        //         <Typography variant="h2" align="center">memories</Typography>
-        //         <img src={memories} alt="memories" height="60"/>
+        //     <AppBar className={classes.appBar} position="static" color="inherit">
+        //         <Typography className={classes.heading} variant="h2" align="center">memories</Typography>
+        //         <img className={classes.image} src={memories} alt="memories" height="60"/>
         //     </AppBar>
         //     <Grow in>
         //         <Container>
@@ -34,7 +34,7 @@ const App = () => {
         <div maxWidth="lg">
             <div position="static" color="inherit">
                 <h2 align="center">memories</h2>
-                <img src={memories} alt="memories" height="60"/>
+                <img className={classes.image} src={memories} alt="memories" height="60"/>
             </div>
             <div>
                 <div>

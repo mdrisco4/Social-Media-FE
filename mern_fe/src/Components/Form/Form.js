@@ -12,6 +12,10 @@ const Form = () => {
     const handleSubmit = () => {
 
     }
+    const clear = () => {
+
+    }
+
     return (
     //     <>
     //    <h1>FORM</h1>
@@ -53,6 +57,8 @@ const Form = () => {
     //                 onDone={({base64}) => setPostData({ ...postData, selectedFile: base64 })}
     //             />
     //          </div>
+    //          <Button className="{classes.buttonSubmit}" variant="contained" color="primary" size="large" type="submit" fullWidth ></Button>
+    //          <Button className="{classes.buttonSubmit}" variant="contained" color="secondary" size="small" onClick={clear} fullWidth ></Button>
     //         </Form>
     //     </Paper> 
     //     </>
@@ -75,6 +81,7 @@ const Form = () => {
                     onDone={({base64}) => setPostData({ ...postData, selectedFile: base64 })}
                 />
              </div>
+             <button className="{classes.buttonSubmit}" variant="contained" color="secondary" size="small" onClick={clear} fullWidth >Clear</button>
             </form>
         </div>
         </>

@@ -20,33 +20,37 @@ const Form = () => {
     //     <>
     //    <h1>FORM</h1>
     //    <Paper className="classes.paper">
-    //         <Form autoComplete="off" noValidate className="classes.form" onSubmit="handleSubmit">
+    //         <Form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit="handleSubmit">
     //         <Typography varient="h6">Creating a Memory</Typography>
     //         <TextField 
     //             name="creator" 
     //             varient="outlined" 
-    //             label="Creator" 
+    //             label="Creator"
+    //             fullWidth
     //             value={postData.creator}
     //             onChange={(e) => setPostData({ ...postData, creator: e.target.value})}
     //         />
     //         <TextField 
     //             name="title" 
     //             varient="outlined" 
-    //             label="Title" 
+    //             label="Title"
+    //             fullWidth
     //             value={postData.creator}
     //             onChange={(e) => setPostData({ ...postData, creator: e.target.value})}
     //         />
     //         <TextField 
     //             name="message" 
     //             varient="outlined" 
-    //             label="Message" 
+    //             label="Message"
+    //             fullWidth
     //             value={postData.creator}
     //             onChange={(e) => setPostData({ ...postData, creator: e.target.value})}
     //         />
     //         <TextField 
     //             name="tags" 
     //             varient="outlined" 
-    //             label="Tags" 
+    //             label="Tags"
+    //             fullWidth
     //             value={postData.creator}
     //             onChange={(e) => setPostData({ ...postData, creator: e.target.value})}
     //         />
@@ -66,14 +70,14 @@ const Form = () => {
         <div>
             <form onSubmit="handleSubmit">
              <h6>Creating a Memory</h6>
-             <label for="creator">Creator</label>  
-             <input type="text" id="creator" name="creator" onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
-             <label for="title">Title</label>
-             <input type="text" id="title" name="title" onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
-             <label for="message">Message</label>
-             <input type="text" id="message" name="message" onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
-             <label for="tags">Tags</label>
-             <input type="text" id="tags" name="tags" onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
+             {/* <label for="creator">Creator</label>   */}
+             <input type="text" id="creator" name="creator" placeholder="Creator" onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
+             {/* <label for="title">Title</label> */}
+             <input type="text" id="title" name="title" placeholder="Title" onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
+             {/* <label for="message">Message</label> */}
+             <input type="text" id="message" name="message" placeholder="Message" onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
+             {/* <label for="tags">Tags</label> */}
+             <input type="text" id="tags" name="tags" placeholder="Tags" onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
              <div className="{classes.fileInput}">
                 <FileBase 
                     type="file"

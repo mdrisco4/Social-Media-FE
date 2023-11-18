@@ -77,13 +77,13 @@ const Form = () => {
             <form onSubmit="handleSubmit">
              <h6>Creating a Memory</h6>
              {/* <label for="creator">Creator</label>   */}
-             <input type="text" id="creator" name="creator" placeholder="Creator" onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
+             <input type="text" id="creator" name="creator" placeholder="Creator" fullWidthvalue={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
              {/* <label for="title">Title</label> */}
-             <input type="text" id="title" name="title" placeholder="Title" onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
+             <input type="text" id="title" name="title" placeholder="Title" fullWidthvalue={postData.title} onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
              {/* <label for="message">Message</label> */}
-             <input type="text" id="message" name="message" placeholder="Message" onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
+             <input type="text" id="message" name="message" placeholder="Message" fullWidthvalue={postData.message} onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
              {/* <label for="tags">Tags</label> */}
-             <input type="text" id="tags" name="tags" placeholder="Tags" onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
+             <input type="text" id="tags" name="tags" placeholder="Tags" fullWidthvalue={postData.tags} onChange={(e) => setPostData({ ...postData, creator: e.target.value})} />
              <div className="{classes.fileInput}">
                 <FileBase 
                     type="file"
